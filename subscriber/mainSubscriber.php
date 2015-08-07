@@ -9,7 +9,7 @@
 <div class="up">
 <br>
 
-										<form action="mainSubscriber.php" method="get" >
+										<form action="mainSubscriber.php" method="post" >
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Subscriber: <select size="1" name="subscriber">
 												 <option disabled selected>-Select Subscriber-</option>
 												 <option value="1">Faculty</option>
@@ -23,12 +23,12 @@
 <div class="down">
 	
 	<?php
-	if ( !empty ( $_GET)){
+	if ( !empty ( $_POST)){
 		
-		if ($_GET["subscriber"] == 1){
+		if ($_POST["subscriber"] == 1){
 			include("facultyForm.php"); 
 		}
-		else if ($_GET["subscriber"] ==2){
+		else if ($_POST["subscriber"] ==2){
 			include("itechOfficer.php");
 		}
 		else {
