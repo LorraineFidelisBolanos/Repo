@@ -1,0 +1,6 @@
+and day man lng na kg month ang dapat mo e.compare
+ for each day of the month, query ka sa database for events
+
+
+
+ Lorraine: ang DayRepNo kg setMonth()?

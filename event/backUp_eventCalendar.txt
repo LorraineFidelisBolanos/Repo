@@ -1,0 +1,88 @@
+<?php
+	
+	$dbhost="localhost";
+		$dbuser="itech";
+		$dbpassword="itech123.A";
+		$dbname="sms";
+		
+		//connection to the database
+		$connect=mysql_connect($dbhost, $dbuser, $dbpassword) or die("could not connect to database");
+		
+		
+		//select database to work with
+		mysql_select_db($dbname);
+		$arrayOfEvents = array();
+		$query = "SELECT id, what, eventDate FROM event ORDER BY eventDate DESC";
+		$execute = mysql_query($query);
+	
+		while ($row = mysql_fetch_row($execute)){
+			
+			$subArray = array();
+			$subArray["id"] = $row[0];
+			$subArray["what"] = $row[1];
+			$subArray["ed"] = $row[2];
+			array_push($arrayOfEvents, $subArray);
+			
+		}
+			
+			//foreach($months as $monthsValue){
+			//echo '<option value="'.$monthsValue.'">'.$monthsValue.'</option>';
+	
+	include("puppy.php");
+	
+	$Calendar	=	new PuppyCalendar();
+	
+	$Calendar->setMonth(2);
+	$Calendar->build();
+	$cDays	=	$Calendar-> getCalendarDays();
+	
+	
+	//Make our own calendar!
+	$eventCalendar	=	array();
+	
+	//Fill in the blank days
+	for($i=0;$i<$cDays[0]["DayRepNo"];$i++){
+		array_push($eventCalendar, " ");
+	}
+	
+	//Append calendar days
+		for($i=0;$i<count($cDays);$i++){
+			array_push($eventCalendar, $cDays[$i]["Number"]);
+		}
+	//Print Table
+	echo	'<table border="1">
+		<tr>
+			<td>Sunday</td>
+			<td>Monday</td>
+			<td>Tuesday</td>
+			<td>Wednesday</td>
+			<td>Thursday</td>
+			<td>Friday</td>
+			<td>Saturday</td>
+		</tr><tr>';
+		
+		for($i=0;$i<count($eventCalendar);$i++){
+			echo '<td style="width:100px;height:100px;">';
+		
+		//print day
+		echo $eventCalendar[$i];
+		for($i = 0; $i < count($arrayOfEvents); $i++) {
+			
+			//$arrayOfEvents[$i]["ed"]
+			//yyyy-mm-dd
+			
+			
+		}
+		
+		echo '</td>';
+		
+		//new row
+		if(($i+1)%7==0)
+			echo'</tr><tr>';
+		
+		}
+		
+	echo	'</table>';
+	
+		
+	?>

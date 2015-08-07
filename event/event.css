@@ -1,0 +1,104 @@
+body{
+background:grey;
+}
+
+.wrapper{
+	float:left;
+	width:95%;
+	height:100%;
+	margin:50px;
+	border-style:solid;
+	border-color:black;
+}
+.eventWrapper{
+	float:left;
+	border-style:solid;
+	border-color:pink;
+	width:40%;
+	height:100%;
+	
+}
+.event{
+	float:left;
+	border-style:solid;
+	border-color:yellow;
+	width:100%;
+	height:50%;
+	
+}
+.viewEvent{
+	float:left;
+	border-style:solid;
+	border-color:blue;
+	width:100%;
+	height:8%;
+	
+	
+}
+
+.calendarWrapper{
+	border-style:solid;
+	border-color:red;
+	float:left;
+	width:59%;
+	height:100%;
+}
+.inputMonth{
+	border-style:solid;
+	border-color:green;
+	float:left;
+	width:100%;
+}
+.showCalendar{
+	border-style:solid;
+	float:left;
+}
+
+
+.calendarTable {
+	border-spacing:0px;
+	background:#66ccff;
+	margin:20px auto;
+	border:1px solid #333333;
+	border-right:0;
+	border-bottom:0;
+}
+
+.calendarTable tr {
+	vertical-align:top;
+}
+
+.calendarTable td {
+	padding:5px;
+	border: 1px solid #333333;
+	border-left:0;
+	border-top:0;
+}
+.eventInfo{
+background:fff;
+padding:10px;
+margin:10px;
+border:1px solid black;
+border-radius:10px;
+font-size:20px;
+vertical-align:middle;
+}
+.viewTable {
+	border-spacing:0px;
+	background:#66ccff;
+	margin:20px auto;
+	border:1px solid #333333;
+	border-right:0;
+	border-bottom:0;
+}
+
+.viewTable tr {
+	vertical-align:top;
+}
+
+.viewTable td {
+	padding:5px;
+	border: 1px solid #333333;
+	border-left:0;
+	border-top:0;
+}

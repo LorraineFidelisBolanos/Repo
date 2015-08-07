@@ -1,0 +1,32 @@
+body{
+background:white;
+}
+
+.up{
+	float:center;
+	border-style:solid;
+	width:90%;
+	height:10%;
+	margin:50px;
+}
+
+.down{
+	float:center;
+	border-style:solid;
+	width:90%;
+	height:1000px;
+	margin:50px;
+}
+
+.form{
+	border-style:solid;
+	width:90%;
+	margin:50px;
+}
+
+.list{
+	float:center;
+	border-style:solid;
+	width:90%;
+	margin:50px;
+}
