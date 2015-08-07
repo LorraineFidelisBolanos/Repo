@@ -16,12 +16,12 @@
 		$First_Name 	    =  $_POST["firstname"];
 		$Last_Name 	        =  $_POST["lastname"];
 		$Year_and_Section   =  $_POST["yrSec"];
-		$Cellphone_Number   =  $_POST["cellphone"];
+		$Contact_Number   =  $_POST["Contact"];
 	
 		
 		//insert into database
-		$query="INSERT INTO students(First_Name, Last_Name, Year_and_Section, Cellphone_Number)
-			VALUES('$First_Name','$Last_Name', '$Year_and_Section', '$Cellphone_Number')";
+		$query="INSERT INTO students(First_Name, Last_Name, Year_and_Section, Contact_Number)
+			VALUES('$First_Name','$Last_Name', '$Year_and_Section', '$Contact_Number')";
 			$execute = mysql_query($query);
 		
 		if($execute){
