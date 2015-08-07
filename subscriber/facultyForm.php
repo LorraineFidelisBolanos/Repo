@@ -16,8 +16,8 @@
 			</tr>
 		
 			<tr>
-				<td>Cellphone Number:</td>
-				<td><input type="text" name="cellphone" maxlength="30" size="30" required="Required"></td>
+				<td>Contact Number:</td>
+				<td><input type="text" name="contact" maxlength="30" size="30" required="Required"></td>
 			</tr>
 	</table>
 		
@@ -50,7 +50,7 @@
 				<tr>
 					<td>Fisrt Name</td>
 					<td>Last Name</td>
-					<td>Cellphone Number</td>
+					<td>Contact Number</td>
 				</tr>';
 				
 		while ($row=mysql_fetch_array($execute)){
@@ -59,7 +59,7 @@
 				echo '<tr>';
 				echo'<td>' . $row["First_Name"] . '</td>';
 				echo'<td>' . $row["Last_Name"] . '</td>';
-				echo'<td>' . $row["Cellphone_Number"];
+				echo'<td>' . $row["Contact_Number"];
 				echo'<td>' . "<a href='edit.php?id=$id'>Edit</a>";
 				echo '<td>'. "<a href='delete.php?id=$id'>Delete</a>";
 				echo'</td>';
@@ -72,7 +72,7 @@
 			echo'<div style="padding: 10px; margin:10px; border:1px solid black;">';
 			echo'<b>First Name: </b>'. $row["First_Name"]. "</br>";
 			echo'<b>Last Name: </b>'. $row["Last_Name"]. "</br>";
-			echo'<b>Cellphone Number: </b>'. $row["Cellphone_Number"]. "</br>";
+			echo'<b>Cellphone Number: </b>'. $row["Contact_Number"]. "</br>";
 			echo'</div>';
 			}*/
 	?>
