@@ -21,8 +21,8 @@
 			</tr>
 		
 			<tr>	
-				<td>Cellphone Number:</td>
-				<td><input type="text" name="cellphone" maxlength="30" size="30" required="Required"></td>
+				<td>Contact Number:</td>
+				<td><input type="text" name="contact" maxlength="30" size="30" required="Required"></td>
 			</tr>
 		
 			<tr>	
@@ -61,7 +61,7 @@
 					<td>Fisrt Name</td>
 					<td>Last Name</td>
 					<td>Year and Section</td>
-					<td>Cellphone Number</td>
+					<td>Contact Number</td>
 					<td>Position</td>
 				</tr>';
 				
@@ -72,7 +72,7 @@
 				echo'<td>' . $row["First_Name"] . '</td>';
 				echo'<td>' . $row["Last_Name"] . '</td>';
 				echo'<td>' . $row["Year_and_Section"];
-				echo'<td>' . $row["Cellphone_Number"];
+				echo'<td>' . $row["Contact_Number"];
 				echo'<td>' . $row["Position"];
 				echo'</td>';
 				echo'</tr>';
@@ -84,7 +84,7 @@
 			echo'<div style="padding: 10px; margin:10px; border:1px solid black;">';
 			echo'<b>First Name: </b>'. $row["First_Name"]. "</br>";
 			echo'<b>Last Name: </b>'. $row["Last_Name"]. "</br>";
-			echo'<b>Cellphone Number: </b>'. $row["Cellphone_Number"]. "</br>";
+			echo'<b>Cellphone Number: </b>'. $row["Contact_Number"]. "</br>";
 			echo'</div>';
 			}*/
 	?>
